@@ -1,0 +1,10 @@
+---
+
+- hosts: serverpos_stable
+  tasks:
+  - name: Ansible copy file force
+    copy:
+      src: /home/mis/resto
+      dest: /home/POSserver/share 
+      mode: 0777
+      force: yes

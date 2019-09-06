@@ -1,0 +1,8 @@
+---
+
+- hosts: serverpos_unstable
+  tasks:
+  - name: Ansible copy file force
+    copy:
+      src: /home/mis/mpages/
+      dest: /home/sarirasa/cgi-bin/mpage
